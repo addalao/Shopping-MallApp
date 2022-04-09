@@ -1,17 +1,48 @@
+import "swiper/css/bundle";
+import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
+import history from './history';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+import store from './redux/store.js'
 
+
+//拦截器
+axios.interceptors.request.use(config => {
+
+  const token = localStorage.getItem("token")
+  config.headers = {
+    'Authorization': `bearer ${token}`
+  }
+  return config
+})
+
+axios.interceptors.response.use(
+  (res) => res,
+  (error) => {
+    if (error.response.status === 401) {
+      localStorage.clear();
+      alert("1")
+      history.replace("/");
+    } else if (error.response.status === 403) {
+      alert("请重新使用用户账号登录");
+      localStorage.clear();
+      history.replace("/");
+    }
+
+    return Promise.reject(error);
+  }
+);
 ReactDOM.render(
-  <React.StrictMode>
+  <HistoryRouter history={history}>
     <App />
-  </React.StrictMode>,
+  </HistoryRouter>
+  ,
   document.getElementById('root')
 );
+//不存在效率问题
+store.subscribe(() => {
+  ReactDOM.render(<HistoryRouter history={history}><App /></HistoryRouter>, document.getElementById("root"))
+})
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

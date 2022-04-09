@@ -1,0 +1,15 @@
+#Myheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 17px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  font-weight: 600;
+  background-color: white;
+  position: relative;
+}
+#Myheader img {
+  position: absolute;
+  left: 17px;
+}

@@ -1,0 +1,82 @@
+#Personal {
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(245, 246, 247);
+}
+.Personal-top {
+  padding: 43px 0 42px 19px;
+  background-color: #f0b537;
+  width: 100%;
+  display: flex;
+}
+.headportrait {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.headportrait img {
+  width: 100%;
+  height: 100%;
+}
+.usetext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 14px;
+}
+.usenickname {
+  margin-bottom: 3px;
+}
+.orderNav {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 9px;
+  margin: 0 16px 0px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21.5px 22px 20px 22px;
+}
+.myoption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myoption span {
+  color: #444444;
+  font-size: 12px;
+}
+.myoption img {
+  margin-bottom: 8px;
+}
+.localSet {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 9px;
+  margin: 0 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+.temporaryParent {
+  transform: translateY(-8%);
+}
+.localSet-itm {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 24px 22px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.localSet-itm div {
+  display: flex;
+  align-items: center;
+}
+.localSet-itm div img {
+  margin-right: 18px;
+}
+.ReceivingAddress {
+  border-bottom: 1px solid #f6f6f6;
+}

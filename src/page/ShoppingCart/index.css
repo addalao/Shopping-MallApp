@@ -1,0 +1,100 @@
+#ShoppingCart {
+  background-color: rgb(245, 246, 247);
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+.quantity {
+  display: flex;
+  margin-bottom: 0 !important;
+}
+.quantity div {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.quantity .number {
+  width: 38px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font-size: 12px;
+}
+.decrease {
+  border: 1px solid #dddddd;
+  padding: 0 11px 0 11px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 24px;
+  color: #dddddd;
+}
+.decreases {
+  border: 1px solid #dddddd;
+  padding: 0 11px 0 11px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 24px;
+}
+.Symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+.increase {
+  border: 1px solid #dddddd;
+  padding: 0 11px 0 11px;
+  overflow: hidden;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 24px;
+}
+#settlement {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10px 16px 10px;
+  bottom: 55px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.settlementinput {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.settlement-left {
+  display: flex;
+  align-items: center;
+}
+.settlement-right {
+  display: flex;
+  align-items: center;
+}
+.settlement-butn {
+  background: linear-gradient(to right, #f38e30, #f4521f);
+  padding: 8px 24px 8px 24px;
+  overflow: hidden;
+  border-radius: 26px;
+  color: #ffffff;
+}
+
+.dollarSymbol {
+  font-size: 12px;
+}
+.Priceall {
+  font-size: 16px;
+  color: #ea3e33;
+  margin-right: 10px;
+}
+.total {
+  font-size: 15px;
+  font-style: normal;
+}
+

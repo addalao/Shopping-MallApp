@@ -1,0 +1,111 @@
+.OrederBody {
+    background-color: rgb(245, 246, 247);
+    min-height: 88vh;
+    padding: 1px 10px 0 10px;
+}
+.list {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.OrderDetails_address {
+    display: flex;
+    justify-content: space-between;
+  }
+  .address-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .address-user div {
+    margin-bottom: 12px;
+  }
+  .address-user div p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: PingFang Tc;
+  }
+  .address-user div span {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 500;
+  }
+  .orderlist-goods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 50px;
+}
+.orderlist-goods .left {
+  display: flex;
+}
+.orderlist-goods .left img{
+ width: 50px;
+ height: 50px;
+  margin-right: 14px;
+  border-radius: 4px;
+}
+
+.orderlist-goods .left .goodText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orderlist-goods .left .goodText .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.orderlist-goods .left .goodText .price {
+  font-size: 14px;
+  font-weight: 700;
+  color:  #EA3E33;
+  
+}
+.orderlist-goods .left .goodText .price span {
+  font-size: 12px;
+}
+.orderlist-goods .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 12px;
+  
+}
+.orderlist-goods .right p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.goods {
+    padding-bottom: 0;
+}
+.information{
+    display:  flex;
+    flex-direction: column;
+}
+.infoList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+.infoList .name {
+    font-size: 12px;
+    color: #999999;
+}
+.infoList .price {
+    color: #EA3E33;
+    font-size: 14px;
+    font-weight: 600;
+}
+.infoList .Number {
+    font-size: 12px;
+    color: #333333;
+    font-weight: 600;
+}
+.end {
+    margin-bottom: 0px;
+}

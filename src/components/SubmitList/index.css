@@ -1,0 +1,117 @@
+#SubmitAllList {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px;
+}
+.SubmitList {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 10px 0 10px 0px;
+}
+.foodimg {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+.foodimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.fooddetailedinformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+.fooddetailedinformation div {
+  margin-bottom: 8px;
+}
+.foodtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foodtitle span {
+  display: flex;
+
+  align-items: center;
+}
+.redfont {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #f4f4f4;
+  color: #bcbcbc;
+  padding: 9px;
+}
+.salesvolume {
+  font-size: 10px;
+  color: #898989;
+}
+.Price {
+  display: flex;
+  font-size: 12px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.Price span {
+  display: flex;
+  color: #ea3e33;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+.Price span p {
+  color: #161616;
+}
+
+.discountinfor {
+  flex-wrap: wrap;
+  display: flex;
+  font-size: 9px;
+  color: #ffc13c;
+}
+.discountinfor span {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: #ffc13c 1px solid;
+}
+.ShoppingCartcheckbox {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.ShoppingCartcheckbox span {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  /* border: 1px solid #ffc13c; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ShoppingCartcheckbox span img {
+  width: 100%;
+  height: 100%;
+}

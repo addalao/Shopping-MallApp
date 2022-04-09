@@ -1,0 +1,140 @@
+/* */
+.AddAddress {
+  height: 100vh;
+  background-color: rgb(245, 246, 247);
+}
+.AddList {
+  padding: 0 10px 0 10px;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 8px 0 8px 0;
+}
+.margin {
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.area-cascader-wrap {
+  border-bottom: 2px solid #f9f9f9;
+  width: 77%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+}
+.area-select.large {
+  width: 100% !important;
+  display: flex;
+  border: none !important;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.area-select .area-selected-trigger {
+  display: flex;
+  align-items: center;
+}
+.cascader-menu-list {
+  background-color: rgb(245, 246, 247);
+  border-bottom: 1px solid rgba(7, 7, 7, 0.1);
+}
+.cascader-menu-list-wrap {
+  width: 88vw;
+  margin-left: -70px;
+}
+.cascader-menu-list-wrap div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.story {
+  border: solid 0px;
+  height: 100%;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.area-select .area-selected-trigger {
+  padding: 8px 0 7px 0;
+}
+.boder-bttom {
+  border-bottom: 2px solid #f9f9f9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boder-bttom input {
+  width: 77%;
+}
+.AddAddress-DetailedAddress {
+  padding-top: 12px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.AddAddress-DetailedAddress textarea {
+  height: 76px;
+  width: 77%;
+  border: solid 0px;
+  outline: none;
+  padding-top: 4px;
+  cursor: pointer;
+  vertical-align: top;
+  border-radius: 3px;
+  resize: none;
+}
+#AddAddressCheckbox {
+  -webkit-appearance: none; /*取消复选框外观*/
+
+  border-radius: 50px;
+  width: 50px;
+  height: 30px;
+  background: #888;
+  position: relative; /*相对定位*/
+  /* box-shadow: 0 0 10px 1px #3f3f3f inset; */
+  transition: 0.6s 0.2s;
+  /*transition:width要过度的属性  1s过度的时间  ease-in过度的方式  2s延迟时间
+  过渡方式有：ease先慢后快在慢  linear线性  ease-in慢速开始  ease-out慢速结束 
+        ease-in-out慢速开始慢速结束
+  */
+  cursor: pointer;
+  outline: none;
+}
+#AddAddressCheckbox:checked /*选中被勾选的复选框*/ {
+  background: #34c759;
+}
+#AddAddressCheckbox::after /*增加伪类元素并且为input[type=checkbox的子元素*/ {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute; /*绝对定位*/
+  left: -5px;
+  border-radius: 30px;
+  background: #eee; /*linear-gradient表示线性渐变*/
+  box-shadow: 0px 2px 2px 0px #eee inset, 2px 1px 2px 0px #3f3f3f;
+  /*阴影效果 left top 模糊值 放大值 颜色 方向内外 默认向外*/
+  transition: 0.6s;
+}
+#AddAddressCheckbox:checked::after/*选中被勾选的复选框当中的after伪元素*/ {
+  left: 25px;
+}
+.boder-bttom-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 8px 0 8px 0;
+}
